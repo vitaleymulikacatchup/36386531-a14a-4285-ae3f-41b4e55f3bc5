@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <SiteThemeProvider theme={{ styleVariant: "futuristicAndOutOfBox", colorTemplate: 2, textAnimation: "blur" }}>
       <div id="nav" data-section="nav">
-        <NavbarStyleMinimal logoSrc="/images/logo.svg" logoAlt="CrimsonGlass Logo" buttonText="Get Started" className="text-white" />
+        <NavbarStyleMinimal logoSrc="/images/logo.svg" buttonText="Get Started" className="text-white" />
       </div>
 
       <div id="hero" data-section="hero" className="scroll-mt-24">
@@ -24,7 +24,7 @@ export default function Home() {
 
       <div id="how-to-buy" data-section="how-to-buy">
         <HowToBuy3D title="How to Buy" steps={[
-          { title: "Step 1", description: "Visit our website.", image: "" , position: "left", isCenter: false },
+          { title: "Step 1", description: "Visit our website.", image: "", position: "left", isCenter: false },
           { title: "Step 2", description: "Choose your plan.", image: "", position: "center", isCenter: true },
           { title: "Step 3", description: "Complete your purchase.", image: "", position: "right", isCenter: false },
         ]} />
@@ -39,7 +39,7 @@ export default function Home() {
       </div>
 
       <div id="footer" data-section="footer">
-        <FooterLogoEmphasisBackgroundGradient logoSrc="/images/logo-dot.svg" logoAlt="CrimsonGlass Logo" logoText="CrimsonGlass" items={[
+        <FooterLogoEmphasisBackgroundGradient logoSrc="/images/logo-dot.svg" logoText="CrimsonGlass" items={[
           { label: "Privacy Policy", onClick: () => console.log('Privacy policy clicked') },
           { label: "Terms of Service", onClick: () => console.log('Terms of service clicked') },
           { label: "Contact Us", onClick: () => console.log('Contact clicked') }
