@@ -18,11 +18,14 @@ export default function Home() {
         <BillboardHero title="Welcome to CrimsonGlass" subtitle="Experience the Future of SaaS" />
       </div>
 
-      <div id="about" data-section="about">
-        <SocialsAbout title="About CrimsonGlass" descriptions={["We provide innovative solutions that enhance productivity and create value.", "Our team is dedicated to making your life easier through technology."]} />
+      <div id="about" data-section="about" className="scroll-mt-24">
+        <SocialsAbout title="About CrimsonGlass" descriptions={[
+          "We provide innovative solutions that enhance productivity and create value.",
+          "Our team is dedicated to making your life easier through technology."
+        ]} />
       </div>
 
-      <div id="how-to-buy" data-section="how-to-buy">
+      <div id="how-to-buy" data-section="how-to-buy" className="scroll-mt-24">
         <HowToBuy3D title="How to Buy" steps={[
           { title: "Step 1", description: "Visit our website.", image: "", position: "left", isCenter: false },
           { title: "Step 2", description: "Choose your plan.", image: "", position: "center", isCenter: true },
@@ -30,7 +33,7 @@ export default function Home() {
         ]} />
       </div>
 
-      <div id="tokenomics" data-section="tokenomics">
+      <div id="tokenomics" data-section="tokenomics" className="scroll-mt-24">
         <ExpandingGridTokenomics title="Tokenomics Overview" description="Our token distribution and usage for sustainable growth." cardItems={[
           { id: 1, title: "Supply", description: "1 Million" },
           { id: 2, title: "Liquidity", description: "500k Locked" },
@@ -38,7 +41,7 @@ export default function Home() {
         ]} />
       </div>
 
-      <div id="footer" data-section="footer">
+      <div id="footer" data-section="footer" className="scroll-mt-24">
         <FooterLogoEmphasisBackgroundGradient logoSrc="/images/logo-dot.svg" logoText="CrimsonGlass" items={[
           { label: "Privacy Policy", onClick: () => console.log('Privacy policy clicked') },
           { label: "Terms of Service", onClick: () => console.log('Terms of service clicked') },
